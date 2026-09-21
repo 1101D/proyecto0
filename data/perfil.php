@@ -4,7 +4,8 @@
  */
 
 return [
-    'nombre'     => 'Tu Nombre',
+    'nombre'     => 'Daniel Grandon',
+    'usuario'    => 'dangrares',
     'titulo'     => 'Desarrollador Backend · Laravel & PHP',
     'resumen'    => 'Construyo aplicaciones web robustas con Laravel, APIs RESTful y experiencias de administración a medida. Me apasiona el código limpio y las soluciones escalables.',
     'ubicacion'  => 'Ciudad, País',

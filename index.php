@@ -45,6 +45,7 @@ function e(string $valor): string
         <div class="hero-inner container">
             <span class="tag">Disponible para nuevos proyectos</span>
             <h1><?= e($perfil['nombre']) ?> <span class="highlight">.</span></h1>
+            <p class="handle">@<?= e($perfil['usuario']) ?></p>
             <p class="subtitle"><?= e($perfil['titulo']) ?></p>
             <p class="summary"><?= e($perfil['resumen']) ?></p>
             <div class="hero-actions">
