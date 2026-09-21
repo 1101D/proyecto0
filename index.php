@@ -43,7 +43,7 @@ function e(string $valor): string
 <main>
     <section id="inicio" class="hero">
         <div class="hero-inner container">
-            <span class="tag">Disponible para nuevos proyectos</span>
+            <span class="tag">PORTAFOLIO EN DESARROLLO</span>
             <h1><?= e($perfil['nombre']) ?> <span class="highlight">.</span></h1>
             <p class="handle">@<?= e($perfil['usuario']) ?></p>
             <p class="subtitle"><?= e($perfil['titulo']) ?></p>
