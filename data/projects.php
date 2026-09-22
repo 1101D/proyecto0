@@ -16,6 +16,7 @@ return [
         'demo'        => 'https://eventz.dangrares.cl',
         'repo'        => 'https://github.com/1101D/proyecto1',
         'estado'      => 'Demo completa',
+        'demo_credenciales' => ['email' => 'demo@dangrares.cl', 'password' => 'demodemo123'],
     ],
     [
         'id'          => 'control-finanzas',
@@ -27,6 +28,7 @@ return [
         'demo'        => 'https://finanzas.dangrares.cl',
         'repo'        => 'https://github.com/1101D/proyecto2',
         'estado'      => 'Demo completa',
+        'demo_credenciales' => ['email' => 'demo@dangrares.cl', 'password' => 'demodemo123'],
     ],
     [
         'id'          => 'api-inventario',

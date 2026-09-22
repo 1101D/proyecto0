@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalStack = modalOverlay?.querySelector('.modal-stack');
     const modalDemo = modalOverlay?.querySelector('.modal-demo');
     const modalRepo = modalOverlay?.querySelector('.modal-repo');
+    const modalCredentials = modalOverlay?.querySelector('.modal-credentials');
 
     const abrirModal = (card) => {
         const data = card.dataset;
@@ -57,6 +58,14 @@ document.addEventListener('DOMContentLoaded', () => {
             .join('');
         modalDemo.href = data.demo;
         modalRepo.href = data.repo;
+
+        if (data.demoEmail && data.demoPassword) {
+            modalCredentials.innerHTML = `Demo: <code>${data.demoEmail}</code> / <code>${data.demoPassword}</code>`;
+            modalCredentials.style.display = '';
+        } else {
+            modalCredentials.style.display = 'none';
+        }
+
         modalOverlay.classList.add('open');
     };
 

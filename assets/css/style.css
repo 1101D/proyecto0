@@ -388,6 +388,21 @@ img {
     color: var(--text-muted);
 }
 
+.demo-credentials {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin: 0 0 14px;
+}
+
+.demo-credentials code {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1px 6px;
+    color: var(--text);
+    font-size: 0.75rem;
+}
+
 .project-links {
     display: flex;
     gap: 14px;

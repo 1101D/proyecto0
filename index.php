@@ -98,6 +98,10 @@ function e(string $valor): string
                         data-stack="<?= e(implode('|', $proyecto['stack'])) ?>"
                         data-demo="<?= e($proyecto['demo']) ?>"
                         data-repo="<?= e($proyecto['repo']) ?>"
+                        <?php if (!empty($proyecto['demo_credenciales'])): ?>
+                            data-demo-email="<?= e($proyecto['demo_credenciales']['email']) ?>"
+                            data-demo-password="<?= e($proyecto['demo_credenciales']['password']) ?>"
+                        <?php endif; ?>
                     >
                         <div class="project-thumb">
                             <img src="<?= e($proyecto['imagen']) ?>" alt="<?= e($proyecto['titulo']) ?>" loading="lazy">
@@ -111,6 +115,11 @@ function e(string $valor): string
                                     <li><?= e($tech) ?></li>
                                 <?php endforeach; ?>
                             </ul>
+                            <?php if (!empty($proyecto['demo_credenciales'])): ?>
+                                <p class="demo-credentials">
+                                    Demo: <code><?= e($proyecto['demo_credenciales']['email']) ?></code> / <code><?= e($proyecto['demo_credenciales']['password']) ?></code>
+                                </p>
+                            <?php endif; ?>
                             <div class="project-links">
                                 <a href="<?= e($proyecto['demo']) ?>" onclick="event.stopPropagation()" target="_blank" rel="noopener">Ver demo &rarr;</a>
                                 <a href="<?= e($proyecto['repo']) ?>" onclick="event.stopPropagation()" target="_blank" rel="noopener">Código &rarr;</a>
@@ -156,6 +165,7 @@ function e(string $valor): string
             <h3 class="modal-title"></h3>
             <p class="modal-desc"></p>
             <ul class="stack-list modal-stack"></ul>
+            <p class="demo-credentials modal-credentials" style="display:none;"></p>
             <div class="project-links">
                 <a class="modal-demo" href="#" target="_blank" rel="noopener">Ver demo &rarr;</a>
                 <a class="modal-repo" href="#" target="_blank" rel="noopener">Código &rarr;</a>
