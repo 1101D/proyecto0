@@ -40,6 +40,7 @@ return [
         'demo'        => 'https://github.com/1101D/proyecto3',
         'repo'        => 'https://github.com/1101D/proyecto3',
         'estado'      => 'Demo completa',
+        'demo_credenciales' => ['email' => 'admin@proyecto3.test', 'password' => 'admin12345'],
     ],
     [
         'id'          => 'blog-cms',
