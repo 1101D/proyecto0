@@ -59,9 +59,16 @@ function e(string $valor): string
         <div class="container">
             <div class="section-heading">
                 <span class="eyebrow">Sobre mí</span>
-                <h2>Habilidades y tecnologías</h2>
-                <p>Estas son algunas de las herramientas que uso a diario para construir aplicaciones web.</p>
+                <h2>Cómo trabajo</h2>
             </div>
+
+            <div class="about-text">
+                <?php foreach ($perfil['sobre_mi'] as $parrafo): ?>
+                    <p><?= e($parrafo) ?></p>
+                <?php endforeach; ?>
+            </div>
+
+            <h3 class="about-subheading">Habilidades y tecnologías</h3>
             <div class="skills-grid">
                 <?php foreach ($perfil['habilidades'] as $habilidad): ?>
                     <span class="skill-badge"><?= e($habilidad) ?></span>
