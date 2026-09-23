@@ -37,7 +37,7 @@ return [
         'categoria'   => 'webapp',
         'stack'       => ['Laravel', 'Alpine.js', 'Tailwind CSS', 'SQLite'],
         'imagen'      => 'https://picsum.photos/seed/gestion-inventario/640/420',
-        'demo'        => 'https://github.com/1101D/proyecto3',
+        'demo'        => 'https://inventario.dangrares.cl',
         'repo'        => 'https://github.com/1101D/proyecto3',
         'estado'      => 'Demo completa',
         'demo_credenciales' => ['email' => 'admin@proyecto3.test', 'password' => 'admin12345'],
