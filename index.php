@@ -142,7 +142,7 @@ function e(string $valor): string
                     <p>Estoy disponible para trabajos freelance y oportunidades a tiempo completo.</p>
                 </div>
                 <div class="contact-actions">
-                    <a class="btn btn-primary" href="mailto:<?= e($perfil['email']) ?>">Enviar correo</a>
+                    <a class="btn btn-primary" href="mailto:<?= e($perfil['email']) ?>"><?= e($perfil['email']) ?></a>
                     <a class="btn btn-outline" href="<?= e($perfil['github']) ?>" target="_blank" rel="noopener">GitHub</a>
                     <a class="btn btn-outline" href="<?= e($perfil['linkedin']) ?>" target="_blank" rel="noopener">LinkedIn</a>
                 </div>
